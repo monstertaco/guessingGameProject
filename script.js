@@ -71,4 +71,14 @@
 			};
 		};
 		runQuestionFour();
-		
+		function runQuestionFive() {
+			var guess5 = prompt("Do I love tacos?").toLowerCase();
+			if (guess5 == "yes" || guess5 == "y") {
+				alert("Yes! Tacos are amazing!")
+			}
+			else {
+				alert("Wrong! Try again.")
+				runQuestionFive()
+			};
+		};
+		runQuestionFive()
